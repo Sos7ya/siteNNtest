@@ -118,7 +118,7 @@ span{
     border: 10px solid white;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1000px){
     *{
         color: #E85221;
         font-size: 15px;
@@ -129,12 +129,10 @@ span{
         font-size: 22px;
     }
 
-    #video-section iframe{
-        aspect-ratio: 4/3;
-    }
-    
     #logo{
         left: 20px;
+        width: 98px;
+        height: 98px;
     }
 
     #logo.hiden{
@@ -179,5 +177,10 @@ span{
         justify-content: center;
         gap: 20px;
     }
+
+    #video-section iframe{
+        aspect-ratio: 4/3;
+    }
+
 
 }
