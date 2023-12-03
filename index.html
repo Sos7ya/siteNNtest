@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Sport Fediration</title>
 </head>
+
 <body>
     <header>
         <div id="burger-menu">
-            <div class="line">----</div>
-            <div class="line">----</div>
-            <div class="line">----</div>
+            <div id="lines"><img src="assets/img/burgerbtn.png" alt=""></div>
         </div>
         <nav id="navigation" class="navigation">
             <div id="burger-menu">
-                <div class="line">X</div>
+                <div class="line"><img src="assets/img/burgerCloseBtn.png" alt=""></div>
             </div>
+            <h2 class="burgerTitle">Разделы сайта:</h2>
             <ul id="left-panel">
                 <li>Главная</li>
                 <li>Основные сведения</li>
@@ -32,18 +33,53 @@
                 <li>СМИ о нас</li>
             </ul>
         </nav>
-        <span id = "logo"></span>
+        <span id="logo"></span>
     </header>
     <main>
         <section id="video-section">
-            <iframe allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" sandbox allowfullscreen="true" src="https://vk.com/video_ext.php?oid=-365697&id=456239293&hd=2">
-                
+            <iframe allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" sandbox
+                allowfullscreen="true" src="https://vk.com/video_ext.php?oid=-365697&id=456239293&hd=2">
+
             </iframe>
             <!-- <video autoplay loop muted fullscreen src="https://disk.yandex.ru/d/Fgh2mUQSkIkfqg"></video> -->
         </section>
         <span></span>
         <section id="news-section">
             <h2>новости и мероприятия:</h2>
+            <div id="news-section-one">
+                <div id="news-main">
+                    <div id="news-text-wrapper">
+                        <h3 id="news-date">23.10.23</h3>
+                        <h3 id="news-title">Осенние Чемпионат и Первенство ПФО. Кроссовые дисциплины</h3>
+                        <p id="news-text">С 7 по 10 сентября в Нижнем Новгороде состоятся Чемпионат и Первенство
+                            Приволжского Федерального округа по спортивному ориентированию (кроссовые дисциплины)</p>
+                    </div>
+                </div>
+                <div id="news-secondary-one">
+                    <div id="news-secondary-text-wrapper">
+                        <h3 id="date">23.10.23</h3>
+                        <p>Открываем серию тренировочных стартов по спортивному ориентированию «Осенний призыв»</p>
+                    </div>
+                </div>
+                <div id="news-secondary-two">
+                    <div id="news-secondary-text-wrapper">
+                        <h3 id="date">23.10.23</h3>
+                        <p>Открываем серию тренировочных стартов по спортивному ориентированию «Осенний призыв»</p>
+                    </div>
+                </div>
+                <div id="news-section-two">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="news-section-three">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
         </section>
         <section id="info-section">
             <h2>как начать заниматься:</h2>
@@ -73,7 +109,6 @@
     </footer>
 
     <script>
-        
         const burgerMenu = document.querySelectorAll('#burger-menu');
         const navigation = document.querySelector('#navigation');
         const logo = document.querySelector('#logo');
@@ -83,4 +118,5 @@
         }));
     </script>
 </body>
+
 </html>
