@@ -162,12 +162,62 @@ span{
     gap: 50px;
 }
 
+#news-main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3vw;
+    border-radius: 3vw;
+    background: linear-gradient(90deg, rgba(48, 66, 117, 0.60) 40.04%, rgba(48, 66, 117, 0.00) 100%), url("./assets/img/secBG.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+#news-main h3, #news-main p{
+    color: white;
+}
+
+#news-main #news-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 15px;
+}
+
+
 #news-secondary{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 50px;
+}
+
+#news-main-ul ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#news-main-ul h3, #news-main-ul p{
+    color: black;
+}
+
+#news-secondary-one #news-secondary-text-wrapper{
+    background: linear-gradient(90deg, rgba(48, 66, 117, 0.60) 10.04%, rgba(48, 66, 117, 0.00) 100%), url("./assets/img/compasBG.png") center/cover no-repeat;
+}
+
+#news-section-one #news-secondary div:nth-child(2n){
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-image: url("./assets/img/bg2.png");
+}
+
+#news-section-one #news-secondary div:nth-child(2n) p, #news-section-one #news-secondary div:nth-child(2n) h3{
+    color: black;
 }
 
 #news-section-two{
@@ -182,6 +232,42 @@ span{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 50px;
+    
+}
+
+#news-secondary-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    padding: 2vw;
+    border-radius: 3vw;
+    box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+#news-secondary-text-wrapper h3, #news-secondary-text-wrapper p{
+    color: white;
+}
+
+#news-section-three div:nth-child(2n){
+    color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-image: url("./assets/img/bg2.png");
+}
+
+#news-section-three div:nth-child(2n) p, #news-section-three div:nth-child(2n) h3{
+    color: black;
+}
+
+#news-section-three div:nth-child(2n+1){
+    background: linear-gradient(90deg, rgba(48, 66, 117, 0.60) 10.04%, rgba(48, 66, 117, 0.00) 100%), url("./assets/img/compasBG.png") center/100% no-repeat;
+}
+
+#news-section-three div:nth-child(2n+1) p{
+    color: white;
 }
 
 #info-section{
@@ -370,6 +456,10 @@ footer{
         gap: 15px;
     }
 
+    #news-section-three div:nth-child(2n+1){
+        background: linear-gradient(90deg, rgba(48, 66, 117, 0.60) 10.04%, rgba(48, 66, 117, 0.00) 100%), url("./assets/img/compasBG.png") center/cover no-repeat;
+    }
+
     #info-section-wrapper{
         display: flex;
         flex-direction: column;
@@ -407,7 +497,7 @@ footer{
         text-wrap: anywhere;  
     }
 
-    
+
 
     #footer-nav{
         display: none;
