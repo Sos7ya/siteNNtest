@@ -3,10 +3,26 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 22px;
+    font-family: "Inter";
     color:  #304275;
 }
 h2{
+    font-family: "Dela Gothic One";
+    font-weight: 400;
     font-size: 50px;
+}
+h3{
+    font-family: "Inter";
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 400;
+}
+p{
+    font-size: 24px;
+    font-weight: 400;
 }
 
 body{
@@ -57,7 +73,7 @@ header ul{
     list-style: none;
     flex-wrap: wrap;
     gap: 20px;
-    max-width: 500px;
+    max-width: 560px;
 }
 
 header li{
@@ -142,7 +158,7 @@ span{
 #news-section-one{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 50px;
 }
 
@@ -157,61 +173,72 @@ span{
 #news-section-two{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 50px;
 }
 
 #news-section-three{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 50px;
 }
 
-/* #news-main{
-    grid-column: 1;
-    grid-row: 1 / 3;
-    background: linear-gradient(90deg, rgba(48, 66, 117, 0.60) 40.04%, rgba(48, 66, 117, 0.00) 100%), url("assets/img/section_one_one.png"), lightgray 50% / contain no-repeat;
-    background-position: center;
-    box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+#info-section{
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
-    justify-content: start;
-    box-sizing: border-box;
-    padding: 30px;
-    width: 927px;
-    height: 530px;
-} */
+    align-items: center;
+    flex-shrink: 0;
+    width: 80%;
+    gap: 50px;
+}
 
-/* #news-text-wrapper{
+#info-section h2{
+    text-align: start;
+    align-self: start;
+}
+
+#info-section-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#info-child{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#info-child #info-logo{
+    grid-column: 1/2;
+    background-color: white;
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+
+#info-text-wrapper{
+    grid-column: 2/3;  
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 20px;
-    width: 70%;
-
+    gap: 10px;
+    padding: 5px;    
 }
 
-#news-text-wrapper h3{
-    color: white;
-    font-size: 28px;
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-#news-text-wrapper p{
-    color: white;
-    font-size: 24px;
-}
-
-#news-section-two{
+#footer-wrapper{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 50px;
-} */
-
-
+    align-items: center;
+}
 
 @media (max-width: 1000px){
     *{
@@ -220,12 +247,25 @@ span{
     }
 
     p{
-        font-size: 15px;
+        font-size: 10px;
     }
 
     h2{
         color: #304275;
         font-size: 22px;
+    }
+    h3{
+        font-size: 12px;
+    }
+
+    #news-secondary p{
+        font-size: 10px;
+    }
+    #news-main-ul p{
+        font-size: 12px;
+    }
+    #news-main-ul h3{
+        font-size: 12px;
     }
 
     #logo{
@@ -290,12 +330,6 @@ span{
         transition: all ease-in 1s;
         padding: 20px;
         height: 100%;
-        /* width: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-         */
     }
 
     .navigation ul{
@@ -328,8 +362,38 @@ span{
     #news-section-three{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         gap: 15px;
     }
 
+    #info-section-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #info-child{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #info-child #info-logo{
+        grid-column: 1/2;
+        background-color: white;
+        display: flex;
+        width: 100px;
+        height: 100px;
+    }
+
+    #info-text-wrapper{
+        grid-column: 2/3;  
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 10px;
+        padding: 5px;    
+    }
 }
