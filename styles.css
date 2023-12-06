@@ -324,6 +324,28 @@ span{
     gap: 50px;
 }
 
+#info-child ul{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#social-links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#social-links a{
+    width: 46px;
+    height: 46px;
+}
+
+#social-links a img{
+    width: 100%;
+    height: 100%;
+}
+
 #info-child #info-logo{
     background-color: white;
     width: 100%;
@@ -578,6 +600,10 @@ footer ul li, footer ul li b, footer ul li a, footer ul li p{
         height: 100%;
     }
 
+    #info-section{
+        width: 90%;
+    }
+
     #info-text-wrapper{
         grid-column: 2/2; 
         display: flex;
@@ -587,6 +613,23 @@ footer ul li, footer ul li b, footer ul li a, footer ul li p{
         gap: 10px;
         padding: 5px;
         text-wrap: anywhere;  
+    }
+
+    #info-child ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #social-links{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+    #social-links a{
+        width: 25px;
+        height: 25px;
     }
 
     #name{
