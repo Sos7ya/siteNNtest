@@ -11,7 +11,7 @@ h2{
     font-weight: 400;
     font-size: 50px;
 }
-h3{
+h3, b{
     font-family: "Inter";
     font-weight: 700;
 }
@@ -91,6 +91,7 @@ main{
     justify-content: center;
     width: 100%;
     flex-grow: 1;
+    gap: 4vw;
 }
 
 main #video-section{
@@ -196,15 +197,6 @@ span{
     gap: 50px;
 }
 
-#news-main-ul ul{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-#news-main-ul h3, #news-main-ul p{
-    color: black;
-}
-
 #news-secondary-one #news-secondary-text-wrapper{
     background: linear-gradient(90deg, rgba(48, 66, 117, 0.60) 10.04%, rgba(48, 66, 117, 0.00) 100%), url("./assets/img/compasBG.png") center/cover no-repeat;
 }
@@ -225,6 +217,19 @@ span{
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
     gap: 50px;
+}
+
+#news-main-ul ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#news-main-ul ul li{
+    display: flex;
+    flex-direction: row;
+}
+#news-main-ul b, #news-main-ul p{
+    color: black;
 }
 
 #news-section-three{
@@ -276,7 +281,11 @@ span{
     align-items: center;
     flex-shrink: 0;
     width: 80%;
-    gap: 50px;
+    gap: 5vw;
+}
+
+#info-section p, #info-section h2, #info-section h3, #info-section a{
+    color: #E85221;
 }
 
 #info-section h2{
@@ -341,13 +350,19 @@ footer{
         color: #304275;
         font-size: 22px;
     }
-    h3{
+    h3, b{
         font-size: 12px;
     }
     a{
         font-size: 14px;
     }
-
+    
+    #news-section{
+        gap: 10px;
+    }
+    #news-secondary{
+        gap: 10px;
+    }
     #news-secondary p{
         font-size: 10px;
     }
