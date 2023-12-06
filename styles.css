@@ -523,6 +523,10 @@ footer ul li, footer ul li b, footer ul li a, footer ul li p{
         gap: 20px;
     }
 
+    .navigation ul li a{
+        font-weight: 600;
+    }
+
     #video-section iframe{
         aspect-ratio: 4/3;
     }
