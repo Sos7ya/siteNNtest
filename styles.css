@@ -27,6 +27,9 @@ p{
 
 body{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+
 }
 li{
     list-style: none;
@@ -147,7 +150,7 @@ span{
     flex-direction: column;
     align-items: center;
     flex-shrink: 0;
-    width: 80%;
+    width: 90%;
     gap: 50px;
 }
 
@@ -186,6 +189,7 @@ span{
     flex-direction: column;
     width: 50%;
     gap: 15px;
+    padding: 122px 0;
 }
 
 
@@ -193,7 +197,7 @@ span{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 50px;
 }
 
@@ -232,6 +236,20 @@ span{
     color: black;
 }
 
+#news-section-two #news-secondary-text-wrapper:nth-child(odd){
+    background: linear-gradient(90deg, rgba(48, 66, 117, 0.60) 10.04%, rgba(48, 66, 117, 0.00) 100%), url("./assets/img/compasBG.png") center/cover no-repeat;
+}
+
+#news-section-two #news-secondary-text-wrapper:nth-child(2n){
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-image: url("./assets/img/bg2.png");
+}
+#news-section-two #news-secondary-text-wrapper:nth-child(2n) p, #news-section-two #news-secondary-text-wrapper:nth-child(2n) h3{
+    color: black;
+}
+
 #news-section-three{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -246,7 +264,7 @@ span{
     align-items: flex-start;
     justify-content: center;
     gap: 10px;
-    padding: 2vw;
+    padding: 4vw 2vw;
     border-radius: 3vw;
     box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.25);
 }
@@ -285,7 +303,7 @@ span{
 }
 
 #info-section p, #info-section h2, #info-section h3, #info-section a{
-    color: #E85221;
+    color: #CD1C1C;
 }
 
 #info-section h2{
@@ -301,15 +319,20 @@ span{
 
 #info-child{
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 3fr;
 }
 
 #info-child #info-logo{
-    grid-column: 1/2;
     background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+#info-child #logo-wrapper{
+    grid-column: 1;
     display: flex;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 
 #info-text-wrapper{
@@ -333,7 +356,31 @@ footer{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 50px;
-    align-items: center;
+    justify-content: center;
+    padding: 75px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+footer ul li, footer ul li b, footer ul li a, footer ul li p{
+    color: #E85221;
+}
+
+#footer-social-links{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+#footer-social-links a{
+    height: 45px;
+    width: 45px;
 }
 
 @media (max-width: 1000px){
@@ -356,22 +403,13 @@ footer{
     a{
         font-size: 14px;
     }
+
     
-    #news-section{
-        gap: 10px;
+    #news-main #news-text-wrapper{
+        width: 90%;
+        padding: 60px 0;
     }
-    #news-secondary{
-        gap: 10px;
-    }
-    #news-secondary p{
-        font-size: 10px;
-    }
-    #news-main-ul p{
-        font-size: 12px;
-    }
-    #news-main-ul h3{
-        font-size: 12px;
-    }
+    
 
     #logo{
         left: 20px;
@@ -452,14 +490,14 @@ footer{
 
     #news-section-one{
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 3fr 1fr;
         grid-template-rows: 1fr;
         gap: 15px;
     }
 
     #news-section-two{
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 3fr 1fr;
         grid-template-rows: 1fr;
         gap: 15px;
     }
@@ -473,6 +511,22 @@ footer{
 
     #news-section-three div:nth-child(2n+1){
         background: linear-gradient(90deg, rgba(48, 66, 117, 0.60) 10.04%, rgba(48, 66, 117, 0.00) 100%), url("./assets/img/compasBG.png") center/cover no-repeat;
+    }
+
+    #news-section{
+        gap: 20px;
+    }
+    #news-secondary{
+        gap: 15px;
+    }
+    #news-secondary p{
+        font-size: 10px;
+    }
+    #news-main-ul p{
+        font-size: 12px;
+    }
+    #news-main-ul h3{
+        font-size: 12px;
     }
 
     #info-section-wrapper{
@@ -496,6 +550,7 @@ footer{
         width: 70px;
         height: 70px;
     }
+
     #info-child #info-logo{
         width: 100%;
         height: 100%;
@@ -512,7 +567,23 @@ footer{
         text-wrap: anywhere;  
     }
 
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        align-items: flex-start;
+    }
 
+    footer ul li, footer ul li b{
+        font-size: 14px;
+    }
+
+    #footer-wrapper{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+        padding: 30px;
+    }
 
     #footer-nav{
         display: none;
