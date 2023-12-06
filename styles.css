@@ -29,7 +29,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
 }
 li{
     list-style: none;
@@ -121,7 +121,7 @@ span{
     display: block;
     overflow: hidden;
     width: 100%;
-    height: 10vw;
+    height: 7vw;
     background-image: url("assets/img/vectors.png");
     background-size: cover;
     background-position: center;
@@ -320,6 +320,7 @@ span{
 #info-child{
     display: grid;
     grid-template-columns: 1fr 3fr;
+    gap: 50px;
 }
 
 #info-child #info-logo{
@@ -349,14 +350,13 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 #footer-wrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
-    gap: 50px;
-    justify-content: center;
+    gap: 150px;
     padding: 75px;
 }
 
@@ -581,6 +581,13 @@ footer ul li, footer ul li b, footer ul li a, footer ul li p{
         gap: 10px;
         padding: 5px;
         text-wrap: anywhere;  
+    }
+
+    #name{
+        font-size: 16px;
+    }
+    #adress, #adress a{
+        font-size: 14px;
     }
 
     footer ul{
