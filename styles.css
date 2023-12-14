@@ -20,6 +20,11 @@ a{
     font-size: 22px;
     font-weight: 400;
 }
+
+a:hover{
+    color: #E85221;
+}
+
 p{
     font-size: 24px;
     font-weight: 400;
@@ -428,6 +433,10 @@ footer ul li, footer ul li b, footer ul li a, footer ul li p{
         font-size: 14px;
     }
 
+    a:hover{
+        text-decoration: underline;
+    }
+
     
     #news-main #news-text-wrapper{
         width: 90%;
@@ -454,6 +463,7 @@ footer ul li, footer ul li b, footer ul li a, footer ul li p{
         display: flex;
         align-items: flex-end;
         justify-content: end;
+        z-index: 10;
     }
 
     .burgerTitle{
@@ -512,6 +522,7 @@ footer ul li, footer ul li b, footer ul li a, footer ul li p{
         transition: all ease-in 1s;
         padding: 20px;
         height: 100%;
+        z-index: 10;
     }
 
     .navigation ul{
@@ -527,7 +538,7 @@ footer ul li, footer ul li b, footer ul li a, footer ul li p{
         font-weight: 600;
     }
 
-    #video-section iframe{
+    #video-section{
         aspect-ratio: 4/3;
     }
 
