@@ -122,6 +122,10 @@ main #video-section{
     /* aspect-ratio: 4/3; */
 }
 
+.bg-container{
+    display: none;
+}
+
 span{
     display: block;
     overflow: hidden;
@@ -162,6 +166,10 @@ span{
 #news-section h2{
     text-align: start;
     align-self: start;
+}
+
+.mobile-news{
+    display: none;
 }
 
 .news-section-one{
@@ -308,8 +316,8 @@ span{
     gap: 5vw;
 }
 
-#info-section p, #info-section h2, #info-section h3, #info-section a{
-    color: #CD1C1C;
+#info-section h3{
+    color: #E85221;
 }
 
 #info-section h2{
@@ -418,7 +426,7 @@ footer ul li:hover{
 /* Mbobile */
 @media (max-width: 1000px){
     *{
-        color: #E85221;
+        /* color: #E85221; */
         font-size: 15px;
     }
 
@@ -546,30 +554,74 @@ footer ul li:hover{
         aspect-ratio: 4/3;
     }
 
+    #video-section video{
+        display: none;
+    }
+
+    .bg-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .bg-container img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .mobile-news{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    .mobile-news *{
+        color: #304275;
+    }
+
+    .mobile-news-photo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .mobile-news-photo img{
+        width: 100%;
+        border-radius: 12vw;
+    }
+
+    .mobile-news .news-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .mobile-news .news-link *{
+        color: #E85221;
+    }
+
+    .mobile-news .news-link *:hover{
+        text-decoration: underline;
+    }
+
     .news-section-one{
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 15px;
+        display: none;
     }
 
     .news-section-two{
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 15px;
-    }
-
-    .news-main-ul ul{
-        width: 100%;
-        gap: 10px;
+        display: none;
     }
 
     .news-section-three{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 15px;
+        display: none;
     }
 
     .news-section-three div:nth-child(2n+1){
